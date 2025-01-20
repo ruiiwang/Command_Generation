@@ -32,11 +32,11 @@ negative_generation_template: |
   - Use similar core words but different meanings
   For example, if the target intent is "Take a picture" (photo capturing):
   Good examples (different intents but easily confused):
-  - "How do I take better pictures?"  (help/guidance)
-  - "Check camera settings"          (settings)
-  - "Is my camera working?"          (status check)
-  - "Prepare camera for photo"       (preparation)
-  - "Show my recent pictures"        (management)
+  - "How do I take better pictures?"
+  - "Check camera settings"
+  - "Is my camera working?"
+  - "Prepare camera for photo"
+  - "Show my recent pictures"
   Avoid:
   - Complex or long expressions
   - Technical language
@@ -47,19 +47,12 @@ negative_scoring_template: |
   You are given a user variation and the original instruction.
   Rate how likely this instruction could be confused with the target instruction on a scale from 0 to 5,
   with 0 meaning completely unconfusing and 5 meaning very confusing.
-  Scoring guide:
-  5 - Extremely confusing: Uses nearly identical keywords, very similar context
-  4 - Very confusing: Highly related action, same domain
-  3 - Moderately confusing: Related action, similar keywords
-  2 - Somewhat confusing: Same domain but different purpose
-  1 - Slightly confusing: Shares some keywords but clearly different
-  0 - Not confusing: Completely different intent
-  Consider:
-  1. Keyword similarity: How many key terms are shared?
-  2. Context overlap: How similar is the usage scenario?
-  3. User behavior: Is this a common user confusion pattern?
-  4. Functional proximity: How close is the requested action to the target?
-  5. Natural language patterns: How similar is the expression structure?
+  Please consider:
+  1. Linguistic similarity
+  2. Usage scenario overlap
+  3. Common user behavior patterns
+  4. Keyword/command pattern similarity
+  5. Contextual relevance
 
   Instruction: {instruction}
   Variation: {variation}

@@ -13,6 +13,9 @@ models:
 generation_count: 100
 iterations: 50
 scoring_threshold: 3
+generation_count_negative: 50
+iterations_negative: 50
+scoring_threshold_negative: 1
 output_dir: "./intent_dataset_outputs"
 
 skip_scoring: "False"
