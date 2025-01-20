@@ -1,0 +1,25 @@
+name: intent
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - ipykernel
+  - jupyter_client
+  - jupyter_core
+  - ipython
+  - debugpy
+  - psutil
+  - pyzmq
+  - setuptools
+  - pip:
+    - comm
+    - executing
+    - matplotlib-inline
+    - nest-asyncio
+    - packaging
+    - platformdirs
+    - pure_eval
+    - typing_extensions
+    - wcwidth

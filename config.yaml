@@ -1,0 +1,76 @@
+models:
+  generation:
+    name: "gpt-4"
+    temperature: 0.7
+    max_tokens: 6000
+    retry_attempts: 3
+  scoring:
+    name: "gpt-4"
+    temperature: 0.0
+    max_tokens: 512
+    retry_attempts: 3
+
+generation_count: 100
+iterations: 50
+scoring_threshold: 3
+output_dir: "./intent_dataset_outputs"
+
+skip_scoring: "False"
+
+instructions_list:
+  - instruction: "Take a picture"
+    language: "English"
+    category: "photo"
+
+  - instruction: "Start recording"
+    language: "English"
+    category: "video"
+
+  - instruction: "Stop recording"
+    language: "English"
+    category: "video"
+
+  - instruction: "Play"
+    language: "English"
+    category: "media"
+
+  - instruction: "Pause"
+    language: "English"
+    category: "media"
+
+  - instruction: "Previous"
+    language: "English"
+    category: "media"
+
+  - instruction: "Next"
+    language: "English"
+    category: "media"
+
+  - instruction: "Volume up"
+    language: "English"
+    category: "volume"
+
+  - instruction: "Volume down"
+    language: "English"
+    category: "volume"
+
+  - instruction: "Call [contact name]"
+    language: "English"
+    category: "calling"
+
+  - instruction: "Battery check"
+    language: "English"
+    category: "battery"
+
+  - instruction: "Ask a question need photo"
+    language: "English"
+    category: "photo_chat"
+
+category_context_map:
+  photo: "The user wants the device to capture an image. Be careful not to confuse this with recording a video."
+  video: "The user wants to control video recording on the device. Be careful not to confuse this with take a photo/picture"
+  media: "The user wants to control media playback (e.g., music, video)."
+  volume: "The user wants to adjust the device's volume level."
+  calling: "The user wants to initiate a phone call."
+  battery: "The user wants to check the battery level or status."
+  photo_chat: "The user wants to ask visual-based questions, like identifying objects, analyzing charts, or translating text from an image. Examples include checking if device wiring is correct, assessing plant health from a photo, or interpreting map symbols. They provide images or documents for detailed analysis or insights."
