@@ -42,6 +42,7 @@ Jupyter Notebook:
 1. `{instruction}_variations_{timestamp}.xlsx`: 所有生成指令
 2. `{instruction}_scores_{timestamp}.xlsx`: 评分结果
 3. `{instruction}_validated_{timestamp}.xlsx`: 最终验证通过的指令
+
 同时对每个分类生成正样本和负样本文件（带有negative）
 
 
