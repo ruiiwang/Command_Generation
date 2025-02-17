@@ -11,10 +11,10 @@
 ├── IntentDatasetCreation.ipynb                             // 包含OPENAI_API_KEY和调试结果的数据集生成代码</br>
 ├── prompts.yaml                                            // 用于生成和评分的模板提示词</br>
 └── intent_dataset_outputs/                                 // 生成的数据集输出目录</br>
-    ├── {instruction}_variations_{timestamp}.xlsx</br>
-    ├── {instruction}_scores_{timestamp}.xlsx</br>
-    ├── {instruction}_validated_{timestamp}.xlsx</br>
-    └── ......xlsx</br>
+|   ├── {instruction}_variations_{timestamp}.xlsx</br>
+|   ├── {instruction}_scores_{timestamp}.xlsx</br>
+|   ├── {instruction}_validated_{timestamp}.xlsx</br>
+|   └── ......xlsx</br>
 
 
 ## 文件内容
