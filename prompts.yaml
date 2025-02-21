@@ -19,17 +19,28 @@ negative_generation_template: |
   Instruction: {instruction}
   Language: {language}
   context: {context}
-  Generate {count} user expressions that could be easily confused with this target intent. Focus on the most common and natural user expressions where users might use similar expressions but actually mean different intents.
-  Rules:
-  - Keep it SHORT (3-10 words)
-  - Must sound natural
-  - Change the intent slightly
-  - Use the same key words
+  Generate {count} expressions that users might confuse with this target intent.
+  Think about these common scenarios:
+   - Before the action (preparation/settings)
+   - After the action (checking results)
+   - Related status queries
+   - Help or information seeking
+   - Similar but different actions
+  Common confusion patterns to consider:
+   - Question vs Command ("take a picture" -> "how to take pictures")
+   - Check vs Execute ("take a picture" -> "check camera")
+   - Past vs Present ("take a picture" -> "show my pictures")
+   - Settings vs Action ("take a picture" -> "camera settings")
+   - Help vs Execute ("take a picture" -> "picture help")
   Requirements:
-  - Keep it SHORT and SIMPLE
-  - Must be natural daily expressions
-  - Focus on high-frequency user expressions
-  - Use similar core words but different meanings
+   - Must be short (2-6 words)
+   - Must be casual daily expressions
+   - Focus on:
+      Questions about the action
+      Checking status/results
+      Settings related
+      Help seeking
+      Similar function queries
   For example, if the target intent is "Take a picture" (photo capturing):
   Good examples (different intents but easily confused):
   - "How do I take better pictures?"

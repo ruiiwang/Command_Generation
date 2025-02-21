@@ -53,17 +53,17 @@ Jupyter Notebook:
    - 定义指令列表
    - 调整生成数量和阈值
 
-2. 运行Jupyter Notebook
+2. 运行Jupyter Notebook（使用base环境）
 
 3. 结果将保存在 `intent_dataset_outputs` 目录中
 
 
 ## 指令类别
 当前支持的指令类别：
-- photo: 相机/拍照指令
-- video: 视频录制指令
-- media: 媒体播放控制
+- photo: 拍照
+- video: 视频录制
+- media: 媒体控制
 - volume: 音量调节
-- calling: 电话呼叫指令
+- calling: 电话
 - battery: 电池状态检查
 - photo_chat: 视觉分析查询

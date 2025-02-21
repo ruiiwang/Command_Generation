@@ -15,7 +15,7 @@ iterations: 50
 scoring_threshold: 3
 generation_count_negative: 50
 iterations_negative: 50
-scoring_threshold_negative: 1
+scoring_threshold_negative: 2
 output_dir: "./intent_dataset_outputs"
 
 skip_scoring: "False"
@@ -33,19 +33,19 @@ instructions_list:
     language: "English"
     category: "video"
 
-  - instruction: "Play"
+  - instruction: "Play music"
     language: "English"
     category: "media"
 
-  - instruction: "Pause"
+  - instruction: "Pause music"
     language: "English"
     category: "media"
 
-  - instruction: "Previous"
+  - instruction: "Previous music"
     language: "English"
     category: "media"
 
-  - instruction: "Next"
+  - instruction: "Next music"
     language: "English"
     category: "media"
 
@@ -57,7 +57,7 @@ instructions_list:
     language: "English"
     category: "volume"
 
-  - instruction: "Call [contact name]"
+  - instruction: "Phone call [contact name]"
     language: "English"
     category: "calling"
 
@@ -72,7 +72,7 @@ instructions_list:
 category_context_map:
   photo: "The user wants the device to capture an image. Be careful not to confuse this with recording a video."
   video: "The user wants to control video recording on the device. Be careful not to confuse this with take a photo/picture"
-  media: "The user wants to control media playback (e.g., music, video)."
+  media: "The user wants to control music playback specifically. Commands are related to playing, pausing, or navigating between songs in a music player or playlist."
   volume: "The user wants to adjust the device's volume level."
   calling: "The user wants to initiate a phone call."
   battery: "The user wants to check the battery level or status."
