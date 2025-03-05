@@ -1,11 +1,11 @@
 models:
   generation:
-    name: "gpt-4"
+    name: "gpt-4o"
     temperature: 0.7
     max_tokens: 6000
     retry_attempts: 3
   scoring:
-    name: "gpt-4"
+    name: "gpt-4o"
     temperature: 0.0
     max_tokens: 512
     retry_attempts: 3
@@ -69,6 +69,18 @@ instructions_list:
     language: "English"
     category: "photo_chat"
 
+  - instruction: "Reminder"
+    language: "English"
+    category: "reminder"
+
+  - instruction: "Timer"
+    language: "English"
+    category: "timer"
+
+  - instruction: "Weather"
+    language: "English"
+    category: "weather"
+
 category_context_map:
   photo: "The user wants the device to capture an image. Be careful not to confuse this with recording a video."
   video: "The user wants to control video recording on the device. Be careful not to confuse this with take a photo/picture"
@@ -77,3 +89,6 @@ category_context_map:
   calling: "The user wants to initiate a phone call."
   battery: "The user wants to check the battery level or status."
   photo_chat: "The user wants to ask visual-based questions, like identifying objects, analyzing charts, or translating text from an image. Examples include checking if device wiring is correct, assessing plant health from a photo, or interpreting map symbols. They provide images or documents for detailed analysis or insights."
+  reminder: "The user wants to manage reminders for events, tasks, or appointments. This includes creating new reminders, deleting existing ones, or updating reminder details such as time, date, or description. Examples: 'Remind me to call mom tomorrow', 'Set a reminder for my meeting at 3pm', 'Delete my grocery reminder', 'Change my dentist reminder to Friday'."
+  timer: "The user wants to create or manage countdown timers. This includes setting new timers for specific durations, canceling active timers, or modifying existing timer durations. Examples: 'Set a 10-minute timer', 'Timer for 30 minutes', 'Stop the timer', 'Delete the timer', 'Add 5 minutes to my timer'."
+  weather: "The user wants information about weather conditions, either current or forecast. This includes queries about temperature, precipitation, wind, and general weather state for their current location or a specified location. Examples: 'What's the weather like today', 'Will it rain tomorrow', 'How hot will it be this weekend', 'What's the temperature in London', 'Is it going to snow next week'."
